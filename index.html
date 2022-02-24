@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lofi</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo"> Music </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="waterfalls.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Listening To Lofi</h3>
+            <div class="videoGrid">
+                <iframe
+                    src="https://youtube.com/embed/2FE8WjxMi3s?autoplay=1&mute=1">
+                </iframe>
+                <!-- <iframe
+                    src="https://youtube.com/embed/2FE8WjxMi3s">
+                </iframe> -->
+            </div>
+            <br />
+            <a href="https://www.youtube.com/channel/UCvyJXjb6ZUJBQsfM1xtUz0g">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="twitter.svg" alt=""></a></li>
+            <li><a href="https://discord.gg/Q7YfZbPr"><img src="discord.svg" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // querySelector method allows us to select classes from the document 
+        // object model. So here I am selecting the .toggle & .showcase class.
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+  </body>
+</html>
