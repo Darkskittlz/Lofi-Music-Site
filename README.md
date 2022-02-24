@@ -1,7 +1,7 @@
 # 24/hour Livestream Lofi Channel
 Darkskittlz Youtube: https://www.youtube.com/channel/UCvyJXjb6ZUJBQsfM1xtUz0g
 
-Deploy: https://darkskittlz.github.io/Lofi-Music-Site/
+Deploy: https://lofi-netlify-deploy.netlify.app/
 
 ## Pexel Backgrounds Resource
 <li>https://www.pexels.com/search/videos/aerial%20japan/</li>
