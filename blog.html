@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
     <title>Lofi</title>
 </head>
 
@@ -18,11 +19,22 @@
 
         <div class="overlay4"></div>
 
-        <div class="text">
-            <h2></h2>
-            <br />
-            <a href="https://www.youtube.com/channel/UCvyJXjb6ZUJBQsfM1xtUz0g">Explore</a>
-        </div>
+        <div class="grid">
+            <div id="blog" class="container">
+                <div class="text">
+                    <h3>Code Entry #1</h3>
+                    <pre id="typewriter">
+                        <span class="var-highlight">var</span> object = {
+                            name: <span class="string-highlight">'Foo'</span>,
+                            type: <span class="string-highlight">'Bar'</span>,
+                            location: <span class="string-highlight">'Earth'</span>,
+                            properties:[<span class="string-highlight">'Javascript'</span>,
+                                        <span class="string-highlight">'HTML'</span>,
+                                        <span class="string-highlight">'CSS'</span>];
+                        }; </pre>
+                </div>
+            </div>
+
 
         <ul class="social">
             <li><a href="#"><img src="facebook.svg" alt=""></a></li>
@@ -34,7 +46,7 @@
     <div class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
+            <!-- <li><a href="news.html">News</a></li> -->
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>

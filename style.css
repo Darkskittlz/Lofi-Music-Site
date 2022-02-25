@@ -13,6 +13,11 @@
  font-family: 'poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
 .social img {
     height: 30px;
 }
@@ -130,6 +135,36 @@
     mix-blend-mode: overlay;
 }
 
+/* Blog CSS */
+
+#blog.container {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    backdrop-filter: blur(20px);
+}
+
+#blog.container a{
+    justify-content: center;
+    display: flex;
+}
+
+#blog.container .text h3 {
+    font-size: 4em;
+}
+
+.var-highlight{
+    color: #e23529;
+}
+  
+.string-highlight{
+    color: rgba(214, 194, 16, 0.966);
+}
+
+
+
+/* Contact CSS */
+
 .grid {
     grid-template-columns: 1fr 1fr;
     display: grid;
@@ -189,6 +224,7 @@
 
 .text h3 {
     font-size: 4em;
+    text-align: center;
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
@@ -314,6 +350,25 @@
         margin-bottom: 10px;
         width: 100%;
     }
+
+    /* Blog Media Query */
+
+    #blog.container {
+        height: 300px;
+        margin-top: -80px;
+        width: 340px;
+    }
+
+    #blog.container .text h3 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    #blog.container pre#typewriter  {
+        margin-left: -80px;
+    }
+
+    /* Contact Media Query */
 
     .grid {
         grid-template-columns: 1fr;
