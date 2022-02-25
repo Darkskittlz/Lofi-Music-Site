@@ -2,7 +2,7 @@
 
 /* Root Variables */
 :root {
-    --overlay-color:#013b13a8;
+    --overlay-color:#0b334680;
 }
 
 /* Universal Selector */
@@ -130,6 +130,43 @@
     mix-blend-mode: overlay;
 }
 
+.grid {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    max-width: 530px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#tristan.anchorContainer {
+    margin-top: 120px;
+}
+
+.anchorContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.anchorContainer a {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    backdrop-filter: blur(10px);
+}
+
 .text {
     position: relative;
     z-index: 10;
@@ -142,11 +179,23 @@
     text-transform: uppercase;
 }
 
+#contact.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .text h3 {
     font-size: 4em;
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
+}
+
+.text p {
+    text-align: center;
 }
 
 .text a {
@@ -175,7 +224,7 @@
 .videoGrid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 10px;
+    margin-top: 10px;    
 }
 
 .videoGrid iframe {
@@ -252,6 +301,10 @@
         font-size: 2em
     }
 
+    .text a {
+        margin-left: 60px;
+    }
+
     .videoGrid {
         grid-template-columns: 1fr;
         grid-gap: 0;
@@ -260,6 +313,45 @@
     .videoGrid iframe{
         margin-bottom: 10px;
         width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        display: grid;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 200px;
+        margin-left: -20px;
+    }
+
+    .text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+
+    }
+
+    .image {
+        align-content: center;
+    }
+
+    .image img {
+        padding: 0px;
+        height: 350px;
+        margin-top: 200px;
+    }
+
+    
+    .anchorContainer {
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+
+    #tristan.anchorContainer {
+        margin-top: 10px;
     }
 }
 
