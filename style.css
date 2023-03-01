@@ -2,20 +2,20 @@
 
 /* Root Variables */
 :root {
-    --overlay-color:#0b334680;
+    --overlay-color: #0b334680;
 }
 
 /* Universal Selector */
 * {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
- font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 
 
 .social img {
@@ -97,6 +97,7 @@ body::-webkit-scrollbar {
     background: var(--overlay-color);
     mix-blend-mode: overlay;
 }
+
 .overlay2 {
     position: absolute;
     top: 0;
@@ -106,6 +107,7 @@ body::-webkit-scrollbar {
     background: rgba(206, 229, 250, 0.493);
     mix-blend-mode: overlay;
 }
+
 .overlay3 {
     position: absolute;
     top: 0;
@@ -115,6 +117,7 @@ body::-webkit-scrollbar {
     background: rgba(146, 220, 230, 0.555);
     mix-blend-mode: overlay;
 }
+
 .overlay4 {
     position: absolute;
     top: 0;
@@ -144,7 +147,7 @@ body::-webkit-scrollbar {
     backdrop-filter: blur(20px);
 }
 
-#blog.container a{
+#blog.container a {
     justify-content: center;
     display: flex;
 }
@@ -153,11 +156,11 @@ body::-webkit-scrollbar {
     font-size: 4em;
 }
 
-.var-highlight{
+.var-highlight {
     color: #e23529;
 }
-  
-.string-highlight{
+
+.string-highlight {
     color: rgba(214, 194, 16, 0.966);
 }
 
@@ -260,14 +263,14 @@ body::-webkit-scrollbar {
 .videoGrid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 .videoGrid iframe {
-    border: none;    
+    border: none;
     margin-top: 10px;
-    width: 400px;
-    height: 224px;
+    width: 750px;
+    height: 424px;
 }
 
 .social {
@@ -325,7 +328,9 @@ body::-webkit-scrollbar {
 
 /* Anything 991px and under, these styles will apply to these classes */
 @media(max-width: 798px) {
-    .showcase, .showcase header {
+
+    .showcase,
+    .showcase header {
         padding: 40px;
     }
 
@@ -346,7 +351,7 @@ body::-webkit-scrollbar {
         grid-gap: 0;
     }
 
-    .videoGrid iframe{
+    .videoGrid iframe {
         margin-bottom: 10px;
         width: 100%;
     }
@@ -364,7 +369,7 @@ body::-webkit-scrollbar {
         margin-bottom: 10px;
     }
 
-    #blog.container pre#typewriter  {
+    #blog.container pre#typewriter {
         margin-left: -80px;
     }
 
@@ -405,7 +410,7 @@ body::-webkit-scrollbar {
         margin-top: 200px;
     }
 
-    
+
     .anchorContainer {
         margin-left: -30px;
         margin-top: 10px;
@@ -415,6 +420,3 @@ body::-webkit-scrollbar {
         margin-top: 10px;
     }
 }
-
-
-
